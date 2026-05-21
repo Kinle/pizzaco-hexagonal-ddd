@@ -1,0 +1,20 @@
+[versions]
+spring-boot = "3.5.14"
+dependency-management = "1.1.7"
+spotless = "8.5.1"
+archunit = "1.4.2"
+
+[libraries]
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+h2 = { module = "com.h2database:h2" }
+lombok = { module = "org.projectlombok:lombok" }
+archunit = { module = "com.tngtech.archunit:archunit", version.ref = "archunit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+dependency-management = { id = "io.spring.dependency-management", version.ref = "dependency-management" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
